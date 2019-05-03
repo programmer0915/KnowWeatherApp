@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_weather"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:alpha="50"
+              android:orientation="vertical"
+              android:paddingTop="35dp"
+    tools:context="com.ice.weather.MainActivity">
+
+    <!--下拉控件-->
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/mSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="none">
+
+            <!--天气预报整体布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="30dp">
+
+                <include layout="@layout/activity_weather_head" />
+
+                <include layout="@layout/activity_weather" />
+
+                <include layout="@layout/activity_horizontal_bottom" />
+
+                <include layout="@layout/activity_weather_middle" />
+
+                <include layout="@layout/activity_horizontal_top" />
+
+                <include layout="@layout/activity_charts" />
+
+                <include layout="@layout/activity_piecharts" />
+
+                <include layout="@layout/activity_horizontal_bottom" />
+
+                <include layout="@layout/activity_lifeindex" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

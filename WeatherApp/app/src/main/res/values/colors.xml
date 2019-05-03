@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="white_trans">#aaffffff</color>
+    <color name="white_trans11">#11ffffff</color>
+    <color name="white_trans33">#33ffffff</color>
+    <color name="white_trans55">#55ffffff</color>
+    <color name="refresh">#1dbfff</color>
+    <color name="blue_life">#57D9FF</color>
+    <color name="blue_login">#3F548B</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_black">#506695</color>
+    <color name="azury">#BABEE3</color>
+    <color name="item">#A2A3A4</color>
+</resources>

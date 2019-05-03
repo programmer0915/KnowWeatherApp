@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.ice.weather.ui.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fitsSystemWindows="true"
+        android:background="@color/transparent">
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="@string/register_title"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/login_radius_style">
+
+   <RelativeLayout
+       android:id="@+id/rl_username"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_username_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_username_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setusername_title"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:textColor="#7D787E" />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_set_username"
+            android:layout_below="@+id/rl_username_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:state_window_focused="false"
+                android:theme="@style/EditText_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#ADA1AD"
+                android:hint="@string/setusername"
+                android:textSize="14sp"
+                />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_below="@+id/rl_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_password_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_set_password_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setpassword_title"
+                    android:textSize="20sp"
+                    android:paddingStart="5dp"
+                    android:textColor="#7D787E" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_set_password"
+                android:layout_below="@+id/rl_password_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:state_window_focused="false"
+                    android:theme="@style/EditText_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#ADA1AD"
+                    android:hint="@string/setpassword"
+                    android:textSize="14sp"
+                    />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_password_again"
+                android:layout_below="@+id/rl_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rl_password_again_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_set_password_again_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setpasswordagain_title"
+                        android:textSize="20sp"
+                        android:paddingStart="5dp"
+                        android:textColor="#7D787E" />
+                     </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_set_password_again"
+                    android:layout_below="@+id/rl_password_again_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_password_again"
+                        android:state_window_focused="false"
+                        android:theme="@style/EditText_register"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#ADA1AD"
+                        android:hint="@string/setpasswordagain"
+                        android:textSize="14sp"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+                <RelativeLayout
+                android:id="@+id/rl_register"
+                android:layout_below="@+id/rl_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/btn_register_bg"
+                    android:onClick="onClick"
+                    android:paddingBottom="4dp"
+                    android:text="@string/register_btn"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+                </RelativeLayout>
+
+                <RelativeLayout
+                android:id="@+id/rl_foot"
+                android:layout_below="@+id/rl_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/tv_hasaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#A6A1A5"
+                    android:text="@string/hasaccount"
+                    />
+                <TextView
+                    android:id="@+id/tv_nowlogin"
+                    android:layout_toEndOf="@+id/tv_hasaccount"
+                    android:onClick="onClick"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3A96F9"
+                    android:text="@string/nowlogin"/>
+                 </RelativeLayout>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:baselineAligned="false"
+    >
+    <!--更新时间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom">
+        <!--农历-->
+        <TextView
+            android:id="@+id/tv_lunar"
+            android:text="@string/default_text_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_trans"
+            android:textSize="@dimen/text_size_12"/>
+    </LinearLayout>
+    <!-- 中间部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingStart="13dp"
+        android:paddingEnd="0dp"
+        >
+        <!--城市名-->
+        <TextView
+            android:id="@+id/tv_city"
+            android:text="@string/default_text_type2"
+            android:textSize="@dimen/text_size_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            />
+
+        <!-- 缩放保持宽比-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:baselineAlignBottom="true"
+            android:src="@mipmap/ic_gps"
+            android:adjustViewBounds="true"
+            android:maxHeight="10dp"
+            android:maxWidth="10dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+        <!--发布时间 -->
+        <TextView
+            android:id="@+id/tv_release"
+            android:text="@string/default_text_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_now_time"
+            android:text="@string/default_text_type2"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_trans"
+            android:textSize="@dimen/text_size_12"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

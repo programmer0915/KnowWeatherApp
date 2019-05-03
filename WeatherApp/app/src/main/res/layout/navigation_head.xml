@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/text_size_20"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+    <!-- 头部 1个imgview 2个textview 组成-->
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/default_head"
+        android:contentDescription="@string/nav_header_desc"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_id"
+        android:layout_below="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tv_id"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_title"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl_id"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+    <TextView
+            android:drawableLeft="@drawable/nav_status_online"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="在线"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
